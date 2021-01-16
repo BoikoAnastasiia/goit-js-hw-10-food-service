@@ -14,16 +14,9 @@ const refs = {
 };
 // console.dir(refs.checkbox);
 
-refs.checkbox.addEventListener('input', toggler);
+refs.checkbox.addEventListener('change', toggler);
 
 function toggler() {
-  if (refs.checkbox.checked === true) {
-    refs.body.classList.add('dark-theme');
-  } else if (
-    refs.checkbox.checked === false ||
-    elem.classList.contains('dark-theme')
-  ) {
-    elem.classList.replace('dark-theme', 'light-theme');
-  }
+  refs.body.classList.toggle('dark-theme');
 }
 //   refs.body.classList.add('light-theme');
