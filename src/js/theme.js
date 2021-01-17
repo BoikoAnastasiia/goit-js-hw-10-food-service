@@ -1,7 +1,7 @@
-const Theme = {
-  LIGHT: 'light-theme',
-  DARK: 'dark-theme',
-};
+// const Theme = {
+//   LIGHT: 'light-theme',
+//   DARK: 'dark-theme',
+// };
 
 const refs = {
   checkbox: document.querySelector('#theme-switch-toggle'),
@@ -27,4 +27,5 @@ refs.checkbox.addEventListener('change', changeThemeIf);
 
 if (refs.theme === 'dark-theme') {
   toggler();
+  refs.checkbox.checked = true;
 }
