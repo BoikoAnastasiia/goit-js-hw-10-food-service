@@ -1,8 +1,3 @@
-// const Theme = {
-//   LIGHT: 'light-theme',
-//   DARK: 'dark-theme',
-// };
-
 const refs = {
   checkbox: document.querySelector('#theme-switch-toggle'),
   body: document.querySelector('body'),
